@@ -1,0 +1,14 @@
+.navbar {
+  display: flex;
+  max-width: 40rem;
+  margin: 0 auto;
+}
+
+.todo__list {
+  list-style: none;
+}
+
+.todo__item {
+  background-color: aquamarine;
+  font-size: 2rem;
+}
