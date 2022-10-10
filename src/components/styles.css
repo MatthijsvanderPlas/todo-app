@@ -1,0 +1,105 @@
+.input {
+  display: flex;
+  width: 90%;
+  position: relative;
+  align-items: center;
+}
+
+.input__box {
+  width: 100%;
+  border-radius: 3rem;
+  padding: 1.5rem 2rem;
+  border: none;
+  transition: 200ms;
+}
+
+.input__box:focus {
+  box-shadow: 0 0 10px 1000px rgba(0, 0, 0, 0.5);
+  outline: none;
+}
+
+.input__submit {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  margin: 12px;
+  border-radius: 50px;
+  right: 0px;
+  border: none;
+  font-size: 1rem;
+  background-color: #5d9fe6;
+  color: white;
+  transition: 200ms all;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.75);
+}
+
+.input__submit:hover {
+  background-color: #82b9f3;
+}
+
+.input__submit:active {
+  transform: scale(0.8);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+
+.todos {
+  display: flex;
+  justify-content: space-evenly;
+  width: 90%;
+  flex-wrap: wrap;
+}
+
+.todos__single {
+  display: flex;
+  width: 29.5%;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 15px;
+  background-color: #ebc64d;
+}
+
+.todos__single--text {
+  flex: 1;
+  padding: 5px;
+  border: none;
+  font-size: 1.5rem;
+}
+
+.todos__single--text:focus {
+  outline: none;
+}
+
+.todos__single--edit {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: 0 5px;
+}
+
+.todos__single--edit:focus {
+  outline: none;
+}
+
+.icon {
+  margin-left: 10px;
+  font-size: 1.75rem;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .todos__single {
+    width: 40%;
+  }
+}
+
+@media (max-width: 700px) {
+  .input {
+    width: 95%;
+  }
+  .todos {
+    width: 95%;
+  }
+  .todos__single {
+    width: 100%;
+  }
+}
